@@ -29,8 +29,7 @@ function findMinIndexSloping() {
     return slopings[0];
 }
 
-while (true) {
-    if (Object.keys(relations).length <= 2) break;
+while (Object.keys(relations).length > 2) {
     let sloping = findMinIndexSloping();
     if (!sloping) break;
     answer.push(sloping[1]);
